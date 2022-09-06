@@ -1,10 +1,14 @@
-import { ReactComponent as ViteLogo } from "./assets/vite.svg";
+import { Routes, Route } from "react-router-dom";
+import withLayout from "./components/hoc/withLayout";
+import { About, Home } from "./pages";
 function App() {
+  const HomeHOC = withLayout(Home);
+  const AboutHOC = withLayout(About);
   return (
-    <div className="mx-auto text-center">
-      <ViteLogo className="mx-auto h-20 w-20" />
-      <h1>APP</h1>
-    </div>
+    <Routes>
+      <Route path="/" element={<HomeHOC />} />
+      <Route path="/about" element={<AboutHOC />} />
+    </Routes>
   );
 }
 

@@ -1,4 +1,6 @@
 import { FC, useState } from "react";
+import { NavLink } from "react-router-dom";
+import navigationData from "../../data/navigationData.json";
 
 const Header: FC = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -34,42 +36,15 @@ const Header: FC = () => {
         id="navigation"
       >
         <div className="flex w-full flex-col items-start text-center lg:ml-auto lg:inline-flex lg:h-auto lg:w-auto lg:flex-row lg:items-center">
-          <a
-            href="#"
-            className="w-full items-center justify-center rounded px-3 py-2 text-gray-400 hover:bg-gray-900 hover:text-white lg:inline-flex lg:w-auto"
-          >
-            <span>Home</span>
-          </a>
-          <a
-            href="#"
-            className="w-full items-center justify-center rounded px-3 py-2 text-gray-400 hover:bg-gray-900 hover:text-white lg:inline-flex lg:w-auto"
-          >
-            <span>About</span>
-          </a>
-          <a
-            href="#"
-            className="w-full items-center justify-center rounded px-3 py-2 text-gray-400 hover:bg-gray-900 hover:text-white lg:inline-flex lg:w-auto"
-          >
-            <span>Services</span>
-          </a>
-          <a
-            href="#"
-            className="w-full items-center justify-center rounded px-3 py-2 text-gray-400 hover:bg-gray-900 hover:text-white lg:inline-flex lg:w-auto"
-          >
-            <span>Gallery</span>
-          </a>
-          <a
-            href="#"
-            className="w-full items-center justify-center rounded px-3 py-2 text-gray-400 hover:bg-gray-900 hover:text-white lg:inline-flex lg:w-auto"
-          >
-            <span>Products</span>
-          </a>
-          <a
-            href="#"
-            className="w-full items-center justify-center rounded px-3 py-2 text-gray-400 hover:bg-gray-900 hover:text-white lg:inline-flex lg:w-auto"
-          >
-            <span>Contact Us</span>
-          </a>
+          {navigationData.map((nav, index) => (
+            <NavLink
+              key={index}
+              to={nav.to}
+              className="w-full items-center justify-center rounded px-3 py-2 text-gray-400 hover:bg-gray-900 hover:text-white lg:inline-flex lg:w-auto"
+            >
+              <span>{nav.text}</span>
+            </NavLink>
+          ))}
         </div>
       </div>
     </nav>

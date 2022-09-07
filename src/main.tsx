@@ -12,7 +12,7 @@ favElement.href = viteLogo;
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/sfd-site">
       <App />
     </BrowserRouter>
   </React.StrictMode>

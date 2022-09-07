@@ -1,7 +1,7 @@
 import { ComponentType } from "react";
 import { Footer, Header } from "../presentation";
 
-function withLayout<P>(Component: ComponentType<P>, headerTitle?: string) {
+function withLayout<P extends Object>(Component: ComponentType<P>) {
   const Layout = (props: P) => (
     <>
       <Header />

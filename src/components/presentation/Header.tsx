@@ -5,9 +5,9 @@ import navigationData from "../../data/navigationData.json";
 const Header: FC = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   return (
-    <nav className="flex max-h-fit flex-wrap items-center bg-gray-800 p-3">
+    <nav className="sticky top-0 z-10 flex max-h-fit flex-wrap items-center bg-gray-800 p-3">
       <a className="text-lg font-semibold text-gray-100" href="#">
-        Softwate Freedom Day
+        Jaya Foss Club
       </a>
       <button
         className="nav-toggler ml-auto inline-flex rounded p-3 text-white outline-none hover:bg-gray-900 hover:text-white lg:hidden"

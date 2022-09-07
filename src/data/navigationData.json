@@ -6,5 +6,9 @@
   {
     "text": "Events",
     "to": "/events"
+  },
+  {
+    "text": "Contact",
+    "to": "/contact"
   }
 ]

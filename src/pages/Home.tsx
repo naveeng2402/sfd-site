@@ -53,9 +53,7 @@ const Home: FC = () => {
             >
               GNU
             </a>
-            <NavLink to="http://softwarefreedomday.org/" target="_blank">
-              Ping Us
-            </NavLink>
+            <NavLink to="/contact">Ping Us</NavLink>
           </div>
         </div>
       </section>

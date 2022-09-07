@@ -2,13 +2,12 @@ import { FC } from "react";
 import { NavLink } from "react-router-dom";
 import banner from "../assets/imgs/banner.jpg";
 import poster from "../assets/imgs/poster.jpeg";
-import rms from "../assets/imgs/rms.jpeg";
-import gvr from "../assets/imgs/gvr.jpeg";
-import linus from "../assets/imgs/linus.jpg";
+import { PeopleCard } from "../components/presentation";
+import peopleData from "../data/peopleData";
 
 const Home: FC = () => {
   return (
-    <div className="my-12 flex flex-col gap-8">
+    <main className="my-12 flex flex-col gap-8">
       <img src={banner} alt="banner" />
       <section className="my-4 flex flex-col gap-4 md:flex-row md:px-4">
         <div className="flex flex-col gap-4 px-4 md:px-0">
@@ -60,60 +59,15 @@ const Home: FC = () => {
           </div>
         </div>
       </section>
-      <section className="mx-auto max-w-xl px-4 ">
-        <img src={poster} alt="poster" className="w-full" />
+      <section className="mx-auto max-w-xl px-4 shadow-lg">
+        <img src={poster} alt="poster" className="w-full rounded-md" />
       </section>
-      <section className="flex flex-col  gap-4 px-4 sm:flex-row">
-        <div className="flex flex-col items-center justify-center gap-2 rounded-md bg-gray-100 p-2 shadow-md">
-          <img
-            className="aspect-square w-full"
-            src={rms}
-            alt="Richard Stallman"
-          />
-          <h3 className="text-xl font-semibold text-gray-700">
-            Richard Stallman
-          </h3>
-          <p className="text-gray-500 ">
-            These marketing boxes are a great place to put some information.
-            These can contain summaries of what the company does, promotional
-            information, or anything else that is relevant to the company. These
-            will usually be below-the-fold.
-          </p>
-        </div>
-        <div className="flex flex-col items-center justify-center gap-2 rounded-md bg-gray-100 p-2 shadow-md">
-          <img
-            className="aspect-square w-full"
-            src={linus}
-            alt="Linus Torvalds"
-          />
-          <h3 className="text-xl font-semibold text-gray-700">
-            Linus Torvalds
-          </h3>
-          <p className="text-gray-500 ">
-            The images are set to be circular and responsive. Fusce dapibus,
-            tellus ac cursus commodo, tortor mauris condimentum nibh, ut
-            fermentum massa justo sit amet risus. Etiam porta sem malesuada
-            magna mollis euismod. Donec sed odio dui.
-          </p>
-        </div>
-        <div className="rounded-m flex flex-col items-center justify-center gap-2 bg-gray-100 p-2 shadow-md">
-          <img
-            className="aspect-square w-full"
-            src={gvr}
-            alt="Guido Van Rossum"
-          />
-          <h3 className="text-xl font-semibold text-gray-700">
-            Guido Van Rossum
-          </h3>
-          <p className="text-gray-500 ">
-            Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
-            tellus ac cursus commodo, tortor mauris condimentum nibh, ut
-            fermentum massa justo sit amet risus. Etiam porta sem malesuada
-            magna mollis euismod. Donec sed odio dui.
-          </p>
-        </div>
+      <section className="grid gap-4 px-4 sm:grid-cols-2 lg:grid-cols-4">
+        {peopleData.map((people, index) => (
+          <PeopleCard key={index} {...people} />
+        ))}
       </section>
-    </div>
+    </main>
   );
 };
 

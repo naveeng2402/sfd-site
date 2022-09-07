@@ -2,27 +2,23 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { BrowserRouter } from "react-router-dom";
 import withLayout from "../../components/hoc/withLayout";
 
-import { Home } from "../../pages";
+import { Events } from "../../pages";
 
 export default {
-  title: "Pages/Home",
-  component: Home,
+  title: "Pages/Events",
+  component: Events,
   parameters: {
     layout: "fullscreen",
   },
-} as ComponentMeta<typeof Home>;
+} as ComponentMeta<typeof Events>;
 
-const Template: ComponentStory<typeof Home> = (args) => (
-  <BrowserRouter>
-    <Home {...args} />
-  </BrowserRouter>
-);
+const Template: ComponentStory<typeof Events> = (args) => <Events {...args} />;
 
 export const Story = Template.bind({});
 Story.args = {};
 
-export const withLayoutStory: ComponentStory<typeof Home> = (args) => {
-  const Comp = withLayout(Home);
+export const withLayoutStory: ComponentStory<typeof Events> = (args) => {
+  const Comp = withLayout(Events);
   return (
     <BrowserRouter>
       <Comp></Comp>

@@ -12,7 +12,9 @@ export default {
 } as ComponentMeta<typeof Contact>;
 
 const Template: ComponentStory<typeof Contact> = (args) => (
-  <Contact {...args} />
+  <BrowserRouter>
+    <Contact {...args} />
+  </BrowserRouter>
 );
 
 export const Story = Template.bind({});

@@ -6,7 +6,10 @@ const Header: FC = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   return (
     <nav className="sticky top-0 z-10 flex max-h-fit flex-wrap items-center bg-gray-800 p-3">
-      <a className="text-lg font-semibold text-gray-100" href="#">
+      <a
+        className="mx-10 text-2xl font-semibold text-gray-100 md:text-3xl"
+        href="#"
+      >
         Jaya Foss Club
       </a>
       <button

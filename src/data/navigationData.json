@@ -10,5 +10,9 @@
   {
     "text": "Contact",
     "to": "/contact"
+  },
+  {
+    "text": "Gallery",
+    "to": "/gallery"
   }
 ]

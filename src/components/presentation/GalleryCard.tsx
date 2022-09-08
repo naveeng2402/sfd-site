@@ -15,7 +15,7 @@ const GalleryCard: FC<GalleryCardProps> = ({ year, cover }) => {
           Software Freedom Day {year}
         </h2>
         <Link
-          to={`gallery/${year}`}
+          to={`/gallery/${year}`}
           className="flex w-full  items-center justify-center  gap-1 rounded border-2 bg-blue-600 stroke-inherit px-6 py-2 text-xl font-semibold text-gray-100 transition-all hover:gap-3 md:w-1/2 lg:w-fit"
         >
           View{" "}

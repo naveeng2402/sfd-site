@@ -1,27 +1,29 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { BrowserRouter } from "react-router-dom";
 import withLayout from "../../components/hoc/withLayout";
-import { Gallery } from "../../pages";
+import { GalleryDetails } from "../../pages";
 
 export default {
-  title: "Pages/Gallery",
-  component: Gallery,
+  title: "Pages/GalleryDetails",
+  component: GalleryDetails,
   parameters: {
     layout: "fullscreen",
   },
-} as ComponentMeta<typeof Gallery>;
+} as ComponentMeta<typeof GalleryDetails>;
 
-const Template: ComponentStory<typeof Gallery> = (args) => (
+const Template: ComponentStory<typeof GalleryDetails> = (args) => (
   <BrowserRouter>
-    <Gallery {...args} />
+    <GalleryDetails {...args} />
   </BrowserRouter>
 );
 
 export const Story = Template.bind({});
 Story.args = {};
 
-export const withLayoutStory: ComponentStory<typeof Gallery> = (args) => {
-  const Comp = withLayout(Gallery);
+export const withLayoutStory: ComponentStory<typeof GalleryDetails> = (
+  args
+) => {
+  const Comp = withLayout(GalleryDetails);
   return (
     <BrowserRouter>
       <Comp {...args}></Comp>

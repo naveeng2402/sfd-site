@@ -29,7 +29,7 @@ const Home: FC = () => {
             href="http://softwarefreedomday.org/"
             target="_blank"
           >
-            Softawre Freedom Day »
+            Software Freedom Day »
           </a>
         </div>
         <div className="flex flex-col gap-4 px-4 md:px-0">

@@ -1,17 +1,17 @@
 import { FC, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import navigationData from "../../data/navigationData.json";
 
 const Header: FC = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   return (
     <nav className="sticky top-0 z-10 flex max-h-fit flex-wrap items-center bg-gray-800 p-3">
-      <a
+      <Link
         className="mx-10 text-2xl font-semibold text-gray-100 md:text-3xl"
-        href="#"
+        to="/"
       >
         Jaya Foss Club
-      </a>
+      </Link>
       <button
         className="nav-toggler ml-auto inline-flex rounded p-3 text-white outline-none hover:bg-gray-900 hover:text-white lg:hidden"
         data-target="#navigation"

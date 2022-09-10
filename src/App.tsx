@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import withLayout from "./components/hoc/withLayout";
 import {
   About,
@@ -25,6 +25,7 @@ function App() {
       <Route path="/gallery" element={<GalleryHOC />} />
       <Route path="/gallery/:year" element={<GalleryDetailsHOC />} />
       <Route path="/activity" element={<ActivityHOC />} />
+      <Route path="*" element={<Navigate to="/" />} />
     </Routes>
   );
 }

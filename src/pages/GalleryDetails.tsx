@@ -12,13 +12,13 @@ const GalleryDetails: FC = () => {
       <h2 className="text-center text-3xl font-bold text-gray-800 lg:text-4xl">
         Software Freedom Day {data.year}
       </h2>
-      <div className="mx-auto grid max-w-6xl gap-4 md:grid-cols-2 xl:grid-cols-3">
+      <div className="mx-auto grid gap-4 md:grid-cols-2 lg:grid-cols-3 lg:px-12 xl:grid-cols-4">
         {data.pictures.map((img, index) => (
           <img
             src={img}
             key={index}
             alt={`sfd-${year}-${index + 1}`}
-            className="w-full rounded-md"
+            className="aspect-[4/3] w-full rounded-md"
           />
         ))}
       </div>

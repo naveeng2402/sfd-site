@@ -2,16 +2,20 @@ import cover2009 from "../assets/gallery/2009/front_cover 2009.jpg";
 import cover2010 from "../assets/gallery/2010/front_cover 2010.jpg";
 import cover2011 from "../assets/gallery/2011/front_cover 2011.jpg";
 import cover2014 from "../assets/gallery/2014/front_cover 2014.jpg";
+import cover2020 from "../assets/gallery/2020/front_cover 2020.jpg";
 
-import _2009_1 from "../assets/gallery/2009/2009_1.jpg";
-import _2009_2 from "../assets/gallery/2009/2009_2.jpg";
-import _2009_3 from "../assets/gallery/2009/2009_3.jpg";
-import _2009_4 from "../assets/gallery/2009/2009_4.jpg";
-import _2009_5 from "../assets/gallery/2009/2009_5.jpg";
-import _2009_6 from "../assets/gallery/2009/2009_6.jpg";
-import _2009_7 from "../assets/gallery/2009/2009_7.jpg";
-import _2009_8 from "../assets/gallery/2009/2009_8.jpg";
-import _2009_9 from "../assets/gallery/2009/2009_9.jpg";
+import _2009_1 from "../assets/gallery/2009/2009 (1).jpg";
+import _2009_2 from "../assets/gallery/2009/2009 (2).jpg";
+import _2009_3 from "../assets/gallery/2009/2009 (3).jpg";
+import _2009_4 from "../assets/gallery/2009/2009 (4).jpg";
+import _2009_5 from "../assets/gallery/2009/2009 (5).jpg";
+import _2009_6 from "../assets/gallery/2009/2009 (6).jpg";
+import _2009_7 from "../assets/gallery/2009/2009 (7).jpg";
+import _2009_8 from "../assets/gallery/2009/2009 (8).jpg";
+import _2009_9 from "../assets/gallery/2009/2009 (9).jpg";
+import _2009_10 from "../assets/gallery/2009/2009 (10).jpg";
+import _2009_11 from "../assets/gallery/2009/2009 (11).jpg";
+import _2009_12 from "../assets/gallery/2009/2009 (12).jpg";
 
 import _2010_1 from "../assets/gallery/2010/2010_1.jpg";
 import _2010_2 from "../assets/gallery/2010/2010_2.jpg";
@@ -75,6 +79,29 @@ import _2014_27 from "../assets/gallery/2014/2014_27.jpg";
 import _2014_28 from "../assets/gallery/2014/2014_28.jpg";
 import _2014_29 from "../assets/gallery/2014/2014_29.jpg";
 
+import _2020_1 from "../assets/gallery/2020/2020 (1).jpg";
+import _2020_2 from "../assets/gallery/2020/2020 (2).jpg";
+import _2020_3 from "../assets/gallery/2020/2020 (3).jpg";
+import _2020_4 from "../assets/gallery/2020/2020 (4).jpg";
+import _2020_5 from "../assets/gallery/2020/2020 (5).jpg";
+import _2020_6 from "../assets/gallery/2020/2020 (6).jpg";
+import _2020_7 from "../assets/gallery/2020/2020 (7).jpg";
+import _2020_8 from "../assets/gallery/2020/2020 (8).jpg";
+import _2020_9 from "../assets/gallery/2020/2020 (9).jpg";
+import _2020_10 from "../assets/gallery/2020/2020 (10).jpg";
+import _2020_11 from "../assets/gallery/2020/2020 (11).jpg";
+import _2020_12 from "../assets/gallery/2020/2020 (12).jpg";
+import _2020_13 from "../assets/gallery/2020/2020 (13).jpg";
+import _2020_14 from "../assets/gallery/2020/2020 (14).jpg";
+import _2020_15 from "../assets/gallery/2020/2020 (15).jpg";
+import _2020_16 from "../assets/gallery/2020/2020 (16).jpg";
+import _2020_17 from "../assets/gallery/2020/2020 (17).jpg";
+import _2020_18 from "../assets/gallery/2020/2020 (18).jpg";
+import _2020_19 from "../assets/gallery/2020/2020 (19).jpg";
+import _2020_20 from "../assets/gallery/2020/2020 (20).jpg";
+import _2020_21 from "../assets/gallery/2020/2020 (21).jpg";
+import _2020_22 from "../assets/gallery/2020/2020 (22).jpg";
+
 const galleryData = [
   {
     year: 2009,
@@ -89,6 +116,9 @@ const galleryData = [
       _2009_7,
       _2009_8,
       _2009_9,
+      _2009_10,
+      _2009_11,
+      _2009_12,
     ],
   },
   {
@@ -166,6 +196,34 @@ const galleryData = [
       _2014_27,
       _2014_28,
       _2014_29,
+    ],
+  },
+  {
+    year: 2020,
+    cover: cover2020,
+    pictures: [
+      _2020_1,
+      _2020_2,
+      _2020_3,
+      _2020_4,
+      _2020_5,
+      _2020_6,
+      _2020_7,
+      _2020_8,
+      _2020_9,
+      _2020_10,
+      _2020_11,
+      _2020_12,
+      _2020_13,
+      _2020_14,
+      _2020_15,
+      _2020_16,
+      _2020_17,
+      _2020_18,
+      _2020_19,
+      _2020_20,
+      _2020_21,
+      _2020_22,
     ],
   },
 ];

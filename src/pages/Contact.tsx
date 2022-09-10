@@ -1,17 +1,28 @@
 import { FC } from "react";
-import { ContactCard } from "../components/presentation";
+import { ContactCard, EventCoordinatorsCard } from "../components/presentation";
 import contactData from "../data/ContactData";
+import eventCoordinatorsData from "../data/eventCoordinatorsData.json";
 
 const Contact: FC = () => {
   return (
-    <div className="my-10 grid gap-4 px-4">
+    <div className="my-10 grid gap-8 px-4">
+      <div className=" mx-auto flex flex-col gap-8">
+        <h2 className="text-center text-3xl font-bold text-gray-800 lg:text-4xl">
+          Event Coordinators
+        </h2>
+        <div className="grid items-center justify-center gap-4 lg:grid-cols-4">
+          {eventCoordinatorsData.map((event, index) => (
+            <EventCoordinatorsCard {...event} key={index} />
+          ))}
+        </div>
+      </div>
       <div className=" mx-auto flex max-w-5xl flex-col gap-8">
         <h2 className="text-center text-3xl font-bold text-gray-800 lg:text-4xl">
           Website Contact
         </h2>
         <div className="grid gap-4 lg:grid-cols-3">
           {contactData.map((contact, index) => (
-            <ContactCard {...contact} layout={index} />
+            <ContactCard {...contact} layout={index} key={index} />
           ))}
         </div>
       </div>
@@ -21,7 +32,7 @@ const Contact: FC = () => {
         allowFullScreen={true}
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
-        className="mx-auto aspect-square w-full max-w-5xl rounded sm:aspect-[16/5]"
+        className="mx-auto aspect-video max-h-[33vh] w-full rounded lg:px-12"
       ></iframe>
     </div>
   );

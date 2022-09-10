@@ -1,7 +1,6 @@
 import { FC } from "react";
 
 interface ContactCardProps {
-  image: string;
   title: string;
   name: string;
   position: string;
@@ -11,7 +10,6 @@ interface ContactCardProps {
 }
 
 const ContactCard: FC<ContactCardProps> = ({
-  image,
   mail,
   mobile,
   name,
@@ -21,14 +19,14 @@ const ContactCard: FC<ContactCardProps> = ({
 }) => {
   return (
     <div
-      className={`mx-auto flex w-full max-w-5xl flex-col-reverse justify-between gap-4 rounded-md border border-gray-600 bg-gray-100 p-4 ${
+      className={`mx-auto flex w-full max-w-xl flex-col-reverse justify-between gap-4 rounded-md border border-gray-600 bg-gray-100 p-4 ${
         layout % 2 === 0 ? "sm:flex-row" : "sm:flex-row-reverse"
       }`}
     >
       <div className="flex flex-grow flex-col items-center justify-center gap-2">
         <h2 className="text-xl font-semibold text-gray-600">{title}</h2>
         <h3 className="text-3xl font-bold">{name}</h3>
-        <h4 className="text-gray-500">{position}</h4>
+        <h4 className="text-center text-gray-500">{position}</h4>
         <div className="flex gap-4">
           <a
             href={`mailto:${mail}`}
@@ -72,11 +70,6 @@ const ContactCard: FC<ContactCardProps> = ({
           </a>
         </div>
       </div>
-      <img
-        src={image}
-        alt={title}
-        className="aspect-square rounded-md sm:w-1/3"
-      />
     </div>
   );
 };

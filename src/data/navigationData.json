@@ -12,6 +12,10 @@
     "to": "/gallery"
   },
   {
+    "text": "Activities",
+    "to": "/activity"
+  },
+  {
     "text": "Contact",
     "to": "/contact"
   }

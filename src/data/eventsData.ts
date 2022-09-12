@@ -10,7 +10,7 @@ import techTalkRules from "../assets/rules/TechTalk.pdf";
 import websiteCreationRules from "../assets/rules/Website_Creation.pdf";
 
 const teamLink = "https://forms.gle/zzKJSxQkScY3LfnLA";
-const individualLink = "https://forms.gle/492BkqJRjzrX6uuH9";
+const individualLink = "https://forms.gle/HbggeZiG1Gwv2yLn7";
 
 const eventsData = [
   {

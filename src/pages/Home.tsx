@@ -2,10 +2,16 @@ import { FC } from "react";
 import { NavLink } from "react-router-dom";
 import banner from "../assets/imgs/banner.jpg";
 import poster from "../assets/imgs/poster.jpg";
+import posterMobile from "../assets/imgs/poster_mobile.jpg";
 import { PeopleCard } from "../components/presentation";
 import peopleData from "../data/peopleData";
+// import tailwindData from "../data/tailwind.json";
 
 const Home: FC = () => {
+  const vw = visualViewport?.width as number;
+  const vh = visualViewport?.height as number;
+  const isMobile = vw <= vh ? true : false;
+
   return (
     <main className="my-12 flex flex-col gap-8">
       <img src={banner} alt="banner" className="aspect-auto max-h-[25vh]" />
@@ -58,7 +64,11 @@ const Home: FC = () => {
         </div>
       </section>
       <section className="mx-auto max-w-7xl px-4 shadow-lg">
-        <img src={poster} alt="poster" className="w-full rounded-md" />
+        <img
+          src={isMobile ? posterMobile : poster}
+          alt="poster"
+          className="w-full rounded-md"
+        />
       </section>
       <section className="grid gap-4 px-4 sm:grid-cols-2 lg:grid-cols-4">
         {peopleData.map((people, index) => (

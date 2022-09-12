@@ -64,7 +64,7 @@ const eventsData = [
   {
     title: "Website Creation",
     desc: "This is hereby informed that the Website Creation competition will be held on 17-09-2022. . The participants should register Name, Register Number, Department, Year by scanning the QR code given below before 12-09-2022. The winners will be selected based upon their performance and creativity. The final decision will be taken by the Judging Panel. The participants are requested to prepare extremely well for the event.",
-    regLink: teamLink,
+    regLink: individualLink,
     rulesLink: websiteCreationRules,
   },
 ];

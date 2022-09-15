@@ -74,6 +74,15 @@ const Home: FC = () => {
           className="w-full rounded-md"
         />
       </section>
+      <section className="mx-auto max-w-[100vw] px-4">
+        <EventSchedule />
+        <Link
+          to="/events"
+          className="mx-auto mt-4 block w-fit rounded bg-blue-500 px-8 py-4 font-bold text-gray-50 transition-all hover:scale-105"
+        >
+          View Events
+        </Link>
+      </section>
       <section className="my-4  gap-2 px-4">
         <h2 className="mb-4 text-center text-3xl font-semibold text-gray-800">
           Tools Exhibited
@@ -83,16 +92,7 @@ const Home: FC = () => {
             <ToolCard key={index} {...tool} />
           ))}
         </div>
-        <Link
-          to="/events"
-          className="mx-auto mt-4 block w-fit rounded bg-blue-500 px-8 py-4 font-bold text-gray-50 transition-all hover:scale-105"
-        >
-          View Events
-        </Link>
       </section>
-      <div className="mx-auto max-w-[100vw] px-4">
-        <EventSchedule />
-      </div>
       <section className="mx-auto grid max-w-5xl gap-4 px-4 sm:grid-cols-2 lg:grid-cols-3">
         {peopleData.map((people, index) => (
           <PeopleCard key={index} {...people} />

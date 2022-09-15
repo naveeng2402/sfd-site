@@ -6,7 +6,7 @@ import githubLogo from "../assets/tools-logo/github.svg";
 import gitLogo from "../assets/tools-logo/git.svg";
 import gitlabLogo from "../assets/tools-logo/gitlab.svg";
 import bitbucketLogo from "../assets/tools-logo/bitbucket.png";
-import netbeansLogo from "../assets/tools-logo/netbean.png";
+import netbeansLogo from "../assets/tools-logo/netbean.svg";
 import vimLogo from "../assets/tools-logo/vim.svg";
 import atomLogo from "../assets/tools-logo/atom.png";
 import wiresharkLogo from "../assets/tools-logo/wireshark.png";

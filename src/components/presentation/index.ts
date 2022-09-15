@@ -6,6 +6,7 @@ import ContactCard from "./ContactCard";
 import GalleryCard from "./GalleryCard";
 import EventCoordinatorsCard from "./EventCoordinatorsCard";
 import ToolCard from "./ToolCard";
+import EventSchedule from "./EventSchedule";
 
 export {
   Header,
@@ -16,4 +17,5 @@ export {
   GalleryCard,
   EventCoordinatorsCard,
   ToolCard,
+  EventSchedule,
 };

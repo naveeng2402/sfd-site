@@ -1,0 +1,62 @@
+[
+  {
+    "event": "Inauguration",
+    "timing": "9:00 AM-10:00 AM",
+    "venue": "Seminar Hall",
+    "session": "FN"
+  },
+
+  {
+    "event": "Demo Stall/Expo",
+    "timing": "10:30 AM-3:00 PM",
+    "venue": "2nd floor",
+    "session": "Full Day"
+  },
+
+  {
+    "event": "Code Test",
+    "timing": "10:30 AM-11:30 AM",
+    "venue": "Net Lab",
+    "session": "FN"
+  },
+
+  {
+    "event": "website Creation",
+    "timing": "10:30 AM-11:30 AM",
+    "venue": "Foss Lab",
+    "session": "FN"
+  },
+
+  {
+    "event": "Quiz",
+    "timing": "11:30 AM-12:30 PM",
+    "venue": "Foss Lab",
+    "session": "AN"
+  },
+
+  {
+    "event": "Short Film",
+    "timing": "11:30 AM-12:30 PM",
+    "venue": "HPL Lab",
+    "session": "AN"
+  },
+
+  {
+    "event": "Connecting Thoughts",
+    "timing": "1:45 PM-2:30 PM",
+    "venue": "Foss Lab",
+    "session": "AN"
+  },
+  {
+    "event": "Debate",
+    "timing": "2:30 PM-3:00 PM",
+    "venue": "Seminar Hall",
+    "session": "AN"
+  },
+  {
+    "event": "Panel Discussion/Validatory",
+    "timing": "3:00 PM-4:00 PM",
+    "venue": "Seminar Hall",
+    "session": "AN"
+  }
+]

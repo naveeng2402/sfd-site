@@ -3,7 +3,11 @@ import { Link, NavLink } from "react-router-dom";
 import banner from "../assets/imgs/banner.jpg";
 import poster from "../assets/imgs/poster.jpg";
 import posterMobile from "../assets/imgs/poster_mobile.jpg";
-import { PeopleCard, ToolCard } from "../components/presentation";
+import {
+  EventSchedule,
+  PeopleCard,
+  ToolCard,
+} from "../components/presentation";
 import peopleData from "../data/peopleData";
 import toolsData from "../data/toolsData";
 
@@ -86,6 +90,9 @@ const Home: FC = () => {
           View Events
         </Link>
       </section>
+      <div className="mx-auto px-4">
+        <EventSchedule />
+      </div>
       <section className="mx-auto grid max-w-5xl gap-4 px-4 sm:grid-cols-2 lg:grid-cols-3">
         {peopleData.map((people, index) => (
           <PeopleCard key={index} {...people} />

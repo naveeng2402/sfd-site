@@ -19,11 +19,6 @@ const peopleData = [
     desc: 'Guido van Rossum is a Dutch programmer best known as the creator of the Python programming language, for which he was the "benevolent dictator for life" until he stepped down from the position on 12 July 2018',
     image: gvr,
   },
-  {
-    name: "Richard Feynmen",
-    desc: "Richard Phillips Feynman was an American theoretical physicist, known for his work in the path integral formulation of quantum mechanics, the theory of quantum electrodynamics, the physics of the superfluidity of supercooled liquid helium, as well as his work in particle physics for which he proposed the parton model.",
-    image: rfm,
-  },
 ];
 
 export default peopleData;

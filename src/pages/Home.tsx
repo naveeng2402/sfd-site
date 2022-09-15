@@ -1,11 +1,11 @@
 import { FC } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import banner from "../assets/imgs/banner.jpg";
 import poster from "../assets/imgs/poster.jpg";
 import posterMobile from "../assets/imgs/poster_mobile.jpg";
-import { PeopleCard } from "../components/presentation";
+import { PeopleCard, ToolCard } from "../components/presentation";
 import peopleData from "../data/peopleData";
-// import tailwindData from "../data/tailwind.json";
+import toolsData from "../data/toolsData";
 
 const Home: FC = () => {
   const vw = visualViewport?.width as number;
@@ -70,7 +70,23 @@ const Home: FC = () => {
           className="w-full rounded-md"
         />
       </section>
-      <section className="grid gap-4 px-4 sm:grid-cols-2 lg:grid-cols-4">
+      <section className="my-4  gap-2 px-4">
+        <h2 className="mb-4 text-center text-3xl font-semibold text-gray-800">
+          Tools Exhibited
+        </h2>
+        <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
+          {toolsData.map((tool, index) => (
+            <ToolCard key={index} {...tool} />
+          ))}
+        </div>
+        <Link
+          to="/events"
+          className="mx-auto mt-4 block w-fit rounded bg-blue-500 px-8 py-4 font-bold text-gray-50 transition-all hover:scale-105"
+        >
+          View Events
+        </Link>
+      </section>
+      <section className="mx-auto grid max-w-5xl gap-4 px-4 sm:grid-cols-2 lg:grid-cols-3">
         {peopleData.map((people, index) => (
           <PeopleCard key={index} {...people} />
         ))}

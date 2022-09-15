@@ -5,7 +5,7 @@ export default {
   title: "Components/ToolCard",
   component: ToolCard,
   args: {
-    text: "Blender",
+    tool: "Blender",
     logo: "https://unsplash.it/64",
   },
 } as ComponentMeta<typeof ToolCard>;

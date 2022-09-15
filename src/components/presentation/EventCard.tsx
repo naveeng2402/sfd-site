@@ -5,11 +5,19 @@ interface EventCardProps {
   desc: string;
   regLink: string;
   rulesLink: string;
+  poster: string;
 }
 
-const EventCard: FC<EventCardProps> = ({ title, desc, regLink, rulesLink }) => {
+const EventCard: FC<EventCardProps> = ({
+  poster,
+  title,
+  desc,
+  regLink,
+  rulesLink,
+}) => {
   return (
     <div className="flex w-full flex-col gap-2 rounded border border-slate-400 bg-slate-50 p-4 shadow-md transition-all hover:scale-[101%] hover:shadow-lg">
+      <img src={poster} alt={`${title} poster`} className="rounded" />
       <h3 className="text-3xl font-semibold text-gray-800">{title}</h3>
       <p className="flex-grow text-gray-500">{desc}</p>
       <a

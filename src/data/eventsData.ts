@@ -10,12 +10,12 @@ import websiteCreationRules from "../assets/rules/Website_Creation.pdf";
 
 import codeTestPoster from "../assets/event-posters/code_test.jpg";
 import connectingThoughtsPoster from "../assets/event-posters/connecting_thoughts.jpg";
-import demoStallPoster from "../assets/event-posters/debate.jpg";
+import demoStallPoster from "../assets/event-posters/demo_stall.jpg";
 import techDebatePoster from "../assets/event-posters/debate.jpg";
-import instaPostPoster from "../assets/event-posters/short_film.jpg";
+import instaPostPoster from "../assets/event-posters/insta_post.jpg";
 import projectExpoPoster from "../assets/event-posters/project_expo.jpg";
 import shortFilmPoster from "../assets/event-posters/short_film.jpg";
-import techQuizPoster from "../assets/event-posters/website_creation.jpg";
+import techQuizPoster from "../assets/event-posters/quiz.jpg";
 import websiteCreationPoster from "../assets/event-posters/website_creation.jpg";
 
 const teamLink = "https://forms.gle/zzKJSxQkScY3LfnLA";

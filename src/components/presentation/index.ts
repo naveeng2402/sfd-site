@@ -5,6 +5,7 @@ import PeopleCard from "./PeopleCard";
 import ContactCard from "./ContactCard";
 import GalleryCard from "./GalleryCard";
 import EventCoordinatorsCard from "./EventCoordinatorsCard";
+import ToolCard from "./ToolCard";
 
 export {
   Header,
@@ -14,4 +15,5 @@ export {
   ContactCard,
   GalleryCard,
   EventCoordinatorsCard,
+  ToolCard,
 };

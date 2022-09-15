@@ -90,7 +90,7 @@ const Home: FC = () => {
           View Events
         </Link>
       </section>
-      <div className="mx-auto px-4">
+      <div className="mx-auto max-w-[100vw] px-4">
         <EventSchedule />
       </div>
       <section className="mx-auto grid max-w-5xl gap-4 px-4 sm:grid-cols-2 lg:grid-cols-3">

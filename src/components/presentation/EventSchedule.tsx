@@ -8,24 +8,24 @@ const EventSchedule: FC = () => {
         Event Schedule
       </h2>
       <div className="rounded border-2 border-gray-700">
-        <table className="min-w-full">
+        <table className="">
           <thead className="border-b bg-white font-semibold">
             <tr>
               <th
                 scope="col"
-                className="px-6 py-4 text-left text-sm text-gray-900"
+                className="px-2 py-4 text-left text-sm text-gray-900 sm:px-6"
               >
                 Event
               </th>
               <th
                 scope="col"
-                className="px-6 py-4 text-left text-sm text-gray-900"
+                className="px-2 py-4 text-left text-sm text-gray-900 sm:px-6"
               >
                 Timing
               </th>
               <th
                 scope="col"
-                className="px-6 py-4 text-left text-sm text-gray-900"
+                className="px-2 py-4 text-left text-sm text-gray-900 sm:px-6"
               >
                 Venue
               </th>
@@ -34,13 +34,13 @@ const EventSchedule: FC = () => {
           <tbody>
             {eventSchedule.map((event, index) => (
               <tr className="border-b bg-gray-100">
-                <td className="whitespace-nowrap px-6 py-4 text-sm font-light text-gray-900">
+                <td className="px-2 py-4 text-sm font-light text-gray-900 sm:px-6">
                   {event.event}
                 </td>
-                <td className="whitespace-nowrap px-6 py-4 text-sm font-light text-gray-900">
+                <td className="px-2 py-4 text-sm font-light text-gray-900 sm:px-6">
                   {event.timing}
                 </td>
-                <td className="whitespace-nowrap px-6 py-4 text-sm font-light text-gray-900">
+                <td className="px-2 py-4 text-sm font-light text-gray-900 sm:px-6">
                   {event.venue}
                 </td>
               </tr>

@@ -6,7 +6,7 @@ const contactData = [
   {
     image: admin,
     title: "Website Admin",
-    name: "Prof. M.A.Kumaran",
+    name: ["Prof. M.A.Kumaran"],
     position: "Head of the Department, Computer Science and Engineering",
     mail: "csehod@jec.ac.in",
     mobile: "+91-9444246644",
@@ -16,7 +16,7 @@ const contactData = [
   {
     image: support,
     title: "Support",
-    name: "Jacob Jabakumar",
+    name: ["Jacob Jabakumar"],
     position: "Final Year Student, CSE",
     mail: "jacobjabakumar2002@gmail.com",
     mobile: "+91-7305283377",
@@ -25,7 +25,7 @@ const contactData = [
   {
     image: content_dev,
     title: "Content Developer",
-    name: "Naveen G",
+    name: ["Naveen G", "Krishna Prasad S"],
     position: "Third Year Student, CSE",
     mail: "naveeng2402@gmail.com",
     mobile: "+91-8610181440",

@@ -1,57 +1,21 @@
 [
   {
-    "event_name": "PROJECT EXPO(TEAM)",
-    "coordinators": ["SANJAY", "YUVARAJ", "SIDDHARTH"],
-    "number": "+91 8870370866"
-  },
-  {
-    "event_name": "DEMO STALL(TEAM)",
-    "coordinators": ["SUDHARSHAN", "SANJAY DASS", "MUTHU LAKSHMI"],
-    "number": "+91 8122606669"
-  },
-
-  {
-    "event_name": "WORKSHOP",
-    "coordinators": ["KEVIN", "GOWTHAM PRABHAKARAN", "MUKESH"],
-    "number": "+91 6374014581"
-  },
-  {
-    "event_name": "WEBSITE CREATING(TEAM)",
-    "coordinators": ["RAKSHITHA", "KALAIYARASI"],
-    "number": "+91 9600099157"
+    "image": "",
+    "title": "",
+    "name": ["Pragya Mishra"],
+    "position": "Final Year, Department of Computer Science",
+    "mail": "pragyamisra25@gmail.com",
+    "mobile": "+91-8015135696",
+    "layout": 0
   },
 
   {
-    "event_name": "TECH QUIZ",
-    "coordinators": ["VIGNESH M", "MITHOON", "HARISH S R"],
-    "number": "+91 8939526754"
-  },
-  {
-    "event_name": "CODE TEST",
-    "coordinators": ["EZHILARASI V", "JACOB JABAKUMAR S"],
-    "number": "+91 7305283377"
-  },
-  {
-    "event_name": "TECH DEBATE",
-    "coordinators": ["SHYAM M V", "SANDHIYA"],
-    "number": "+91 9962138105"
-  },
-
-  {
-    "event_name": "CONNECTING THOUGHTS",
-    "coordinators": ["SOWMIYA", "JAMUNA", "SWETHA SRI"],
-    "number": "+91 6380225694"
-  },
-
-  {
-    "event_name": "SHORT FILM",
-    "coordinators": ["ROHITH", "SENTHIL KUMARAN"],
-    "number": "+91 8610305594"
-  },
-
-  {
-    "event_name": "INSTAGRAM POST",
-    "coordinators": ["KOKILA", "SWETHA SRI"],
-    "number": "+91 9150766297"
+    "image": "",
+    "title": "",
+    "name": ["Kevin Daniel"],
+    "position": "Final Year, Department of Computer Science",
+    "mail": "xokev02@gmail.com",
+    "mobile": "+91-6374014581",
+    "layout": 0
   }
 ]

@@ -2,7 +2,7 @@ import { FC } from "react";
 
 interface ContactCardProps {
   title: string;
-  name: string;
+  name: string[];
   position: string;
   mail: string;
   mobile: string;
@@ -20,7 +20,11 @@ const ContactCard: FC<ContactCardProps> = ({
   return (
     <div className="mx-auto flex w-full max-w-xl flex-grow flex-col items-center justify-center gap-2 rounded-md border border-gray-600 bg-gray-100 p-4">
       <h2 className="text-xl font-semibold text-gray-600">{title}</h2>
-      <h3 className="text-3xl font-bold">{name}</h3>
+      {name.map((name, index) => (
+        <h3 key={index} className="text-3xl font-bold">
+          {name}
+        </h3>
+      ))}
       <h4 className="text-center text-gray-500">{position}</h4>
       <div className="flex gap-4">
         <a

@@ -10,9 +10,9 @@ const Contact: FC = () => {
         <h2 className="text-center text-3xl font-bold text-gray-800 lg:text-4xl">
           Event Coordinators
         </h2>
-        <div className="grid items-center justify-center gap-4 lg:grid-cols-4">
+        <div className="grid items-center justify-center gap-4 lg:grid-cols-2">
           {eventCoordinatorsData.map((event, index) => (
-            <EventCoordinatorsCard {...event} key={index} />
+            <ContactCard key={index} {...event} />
           ))}
         </div>
       </div>

@@ -69,9 +69,9 @@ const Home: FC = () => {
       </section>
       <section className="mx-auto max-w-7xl px-4 shadow-lg">
         <img
-          src={isMobile ? posterMobile : poster}
+          src={posterMobile}
           alt="poster"
-          className="w-full rounded-md"
+          className={"w-full max-w-xl rounded-md"}
         />
       </section>
       <section className="mx-auto max-w-[100vw] px-4">

@@ -15,10 +15,16 @@ const Home: FC = () => {
   const vw = visualViewport?.width as number;
   const vh = visualViewport?.height as number;
   const isMobile = vw <= vh ? true : false;
+  const panelMembers = [
+    "Mr.Nishanth Lawrance",
+    "Mr.Siva Sankar",
+    "Mr.Vamsi Krishna",
+    "Mr.R.Venkatachalam",
+  ];
 
   return (
     <main className="my-12 flex flex-col gap-8">
-      <img src={banner} alt="banner" className="aspect-auto max-h-[25vh]" />
+      <img src={banner} alt="banner" className="aspect-auto max-h-[30vh]" />
       <section className="my-4 flex flex-col gap-4 md:flex-row md:px-4">
         <div className="flex flex-col gap-4 px-4 md:px-0">
           <h2 className="text-3xl text-gray-800">What We Do ?</h2>
@@ -85,7 +91,40 @@ const Home: FC = () => {
       </section>
       <section className="my-4  gap-2 px-4">
         <h2 className="mb-4 text-center text-3xl font-semibold text-gray-800">
-          Tools Exhibited
+          Panel Discussion
+        </h2>
+        <h3 className="mb-4 text-center text-xl font-semibold text-gray-800">
+          <strong>Topic: </strong> FOSS Influence in Work and Career Growth
+        </h3>
+        <div className="flex flex-col ">
+          <h3 className="mb-2 w-full text-start text-xl font-semibold text-gray-800">
+            Moderator
+          </h3>
+          <div className="flex max-w-fit translate-x-1/4 flex-row items-center justify-center rounded border border-gray-600 bg-gray-50 p-2 px-8 shadow-md transition-all hover:scale-[101%] sm:translate-x-1/2">
+            <h4 className="flex-grow text-center text-3xl font-semibold text-gray-900 sm:text-2xl ">
+              Mr.T.THarish
+            </h4>
+          </div>
+        </div>
+        <h3 className="mb-2 text-start text-xl font-semibold text-gray-800">
+          Members
+        </h3>
+        <div className="grid gap-2 sm:grid-cols-2 xl:grid-cols-4">
+          {panelMembers.map((members, index) => (
+            <div
+              key={index}
+              className="flex flex-row items-center justify-center gap-4 rounded border border-gray-600 bg-gray-50 p-2 px-8 shadow-md transition-all hover:scale-[101%]"
+            >
+              <h4 className="flex-grow text-center text-3xl font-semibold text-gray-900 sm:text-2xl ">
+                {members}
+              </h4>
+            </div>
+          ))}
+        </div>
+      </section>
+      <section className="my-4  gap-2 px-4">
+        <h2 className="mb-4 text-center text-3xl font-semibold text-gray-800">
+          Tools Demonstrated
         </h2>
         <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
           {toolsData.map((tool, index) => (

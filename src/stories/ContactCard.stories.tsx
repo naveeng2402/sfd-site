@@ -8,7 +8,7 @@ export default {
   args: {
     image: admin,
     title: "Website Admin",
-    name: "Prof. M.A.Kumaran",
+    name: ["Prof. M.A.Kumaran"],
     position: "Head of the Department, Computer Science and Engineering",
     mail: "csehod@jec.ac.in",
     mobile: "+91-9444246644",
